@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="responsive.css">
+    <title>Interactive comments</title>
+</head>
+<body>
+    <!---==== Principal: Start ====--->
+    <main>
+        <!---==== Show Comments: Start ====--->
+        <section id="comments">
+            <div class="comments"></div>
+            <div class="replies"></div>
+        </section>
+        <!---==== Show Comments: End ====--->
+        
+        <!---==== Add Comments: Start ====--->
+        <section class="add_comment">
+            <img src="images/avatars/image-juliusomo.png" alt="user_photo">
+            <textarea placeholder="Add comment..." id="add_comment"></textarea>
+            <button class="btn_send-comment">Send</button>
+        </section>
+        <!---==== Add Comments: End ====--->
+    </main>
+    <!---==== Principal: End ====--->
+    
+    
+    <!---==== Modal: Start ====--->
+    <div class="modal_conteiner">
+        <div class="modal">
+            <h3>Delete comment</h3>
+            <p>Are you sure you want delete this comment?. This will remove the comment and can't be undone.</p>
+
+            <div class="cancel-delete">
+                <button id="cancel_delete">no, cancel</button>
+                <button id="confirm_delete">yes, delete</button>
+            </div>
+        </div>
+    </div>
+    <!---==== Modal: End ====--->
+    
+    <!---==== Footer: Start ====--->
+    <footer>
+        <p>&copy;Created by <b>Alexis Praiz</b> - <a href="https://alexisPraiz.github.io/portfolio">Portafolio</a></p>
+    </footer>
+    <!---==== Footer: End ====--->
+<script src="script.js"></script>
+<script src="dataBase.js"></script>
+<script src="newComment.js"></script>
+<script src="replies.js"></script>
+<script src="readComment.js"></script>
+<script src="readComment2.js"></script>
+</body>
+</html>

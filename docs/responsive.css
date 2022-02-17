@@ -1,0 +1,92 @@
+/*Responsive desing*/
+@media screen and (max-width: 850px){
+    main{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 750px){
+    main{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 650px){
+    main{
+        width: 90%;
+    }
+    .comments .replies{
+        padding-left: 30px;
+    }
+    .comments .replies::before{
+        left: 15px;
+    }
+}
+@media screen and (max-width: 600px){
+    main{
+        width: 95%;
+    }
+    
+    .comment{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .comment .points{
+        height: max-content;
+        width: max-content;
+        flex-direction: row;
+        padding: 10px 15px;
+        margin-top: 15px;
+    }
+    .comment .points .user_points{
+        padding: 0 10px;
+    }
+    .comment .user_comment .user_header label{
+        position: absolute;
+        bottom: 31px;
+        right: 20px;
+    }
+    .comment .user_comment .user_header span .btn_delete{
+        right: 100px;
+    }
+    .modal_conteiner .modal{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    body{
+        font-size: 15px;
+    }
+    .add_comment textarea{
+        height: 70px;
+    }
+    .replies{
+        padding-left: 20px;
+    }
+    .replies::before{
+        left: 10px;
+        width: 1;
+    }
+}
+@media screen and (max-width: 330px){
+    .add_comment textarea{
+        height: 55px;
+        margin: 0 10px;
+    }
+    .add_comment textarea::placeholder{
+        font-size: .8rem;
+    }
+    .replies{
+        padding-left: 0;
+    }
+    .replies::before{
+        left: 0;
+        width: 0;
+    }
+    .modal_conteiner .modal .cancel-delete{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .modal_conteiner .modal .cancel-delete #cancel_delete{
+        margin-bottom: 5px;
+    }
+}
